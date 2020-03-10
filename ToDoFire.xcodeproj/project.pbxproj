@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		2CBBEA392417DA1D007921BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBEA382417DA1D007921BA /* AppDelegate.swift */; };
 		2CBBEA3B2417DA1D007921BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBEA3A2417DA1D007921BA /* SceneDelegate.swift */; };
-		2CBBEA3D2417DA1D007921BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBEA3C2417DA1D007921BA /* ViewController.swift */; };
 		2CBBEA402417DA1D007921BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBBEA3E2417DA1D007921BA /* Main.storyboard */; };
 		2CBBEA422417DA20007921BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CBBEA412417DA20007921BA /* Assets.xcassets */; };
 		2CBBEA452417DA20007921BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBBEA432417DA20007921BA /* LaunchScreen.storyboard */; };
+		2CBBEA4F2417DDAB007921BA /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBEA4E2417DDAB007921BA /* TasksViewController.swift */; };
+		2CBBEA532417DFC2007921BA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBEA522417DFC2007921BA /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2CBBEA352417DA1D007921BA /* ToDoFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBBEA382417DA1D007921BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CBBEA3A2417DA1D007921BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2CBBEA3C2417DA1D007921BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2CBBEA3F2417DA1D007921BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CBBEA412417DA20007921BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CBBEA442417DA20007921BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CBBEA462417DA20007921BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CBBEA4E2417DDAB007921BA /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		2CBBEA522417DFC2007921BA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		2CBBEA372417DA1D007921BA /* ToDoFire */ = {
 			isa = PBXGroup;
 			children = (
-				2CBBEA382417DA1D007921BA /* AppDelegate.swift */,
-				2CBBEA3A2417DA1D007921BA /* SceneDelegate.swift */,
-				2CBBEA3C2417DA1D007921BA /* ViewController.swift */,
-				2CBBEA3E2417DA1D007921BA /* Main.storyboard */,
-				2CBBEA412417DA20007921BA /* Assets.xcassets */,
-				2CBBEA432417DA20007921BA /* LaunchScreen.storyboard */,
-				2CBBEA462417DA20007921BA /* Info.plist */,
+				2CBBEA512417DF8C007921BA /* Controllers */,
+				2CBBEA502417DF6B007921BA /* Supporting files */,
 			);
 			path = ToDoFire;
+			sourceTree = "<group>";
+		};
+		2CBBEA502417DF6B007921BA /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				2CBBEA382417DA1D007921BA /* AppDelegate.swift */,
+				2CBBEA3A2417DA1D007921BA /* SceneDelegate.swift */,
+				2CBBEA3E2417DA1D007921BA /* Main.storyboard */,
+				2CBBEA412417DA20007921BA /* Assets.xcassets */,
+				2CBBEA462417DA20007921BA /* Info.plist */,
+				2CBBEA432417DA20007921BA /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		2CBBEA512417DF8C007921BA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CBBEA522417DFC2007921BA /* LoginViewController.swift */,
+				2CBBEA4E2417DDAB007921BA /* TasksViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CBBEA3D2417DA1D007921BA /* ViewController.swift in Sources */,
+				2CBBEA532417DFC2007921BA /* LoginViewController.swift in Sources */,
+				2CBBEA4F2417DDAB007921BA /* TasksViewController.swift in Sources */,
 				2CBBEA392417DA1D007921BA /* AppDelegate.swift in Sources */,
 				2CBBEA3B2417DA1D007921BA /* SceneDelegate.swift in Sources */,
 			);
@@ -286,7 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4343V4PCQA;
-				INFOPLIST_FILE = ToDoFire/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ToDoFire/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4343V4PCQA;
-				INFOPLIST_FILE = ToDoFire/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ToDoFire/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
